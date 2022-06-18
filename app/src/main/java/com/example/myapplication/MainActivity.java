@@ -82,7 +82,8 @@ public class MainActivity extends AppCompatActivity {
         fList.add(f4);
         fList.add(f5);
 
-        PagerAdapter adapter1 = new FragmentPagerAdapter(getSupportFragmentManager()){
+        PagerAdapter adapter1 = new FragmentPagerAdapter(getSupportFragmentManager(),
+                FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT){
 
             @Override
             public int getCount() {
